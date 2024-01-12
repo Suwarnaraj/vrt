@@ -1,0 +1,161 @@
+
+
+
+- [ ] Server Security Misconfiguration
+	- [ ] Using default credentials 
+	- [ ] Server-side Request Forgery (SSRF)
+		- [ ] Internal High Impact
+		- [ ] Internal Scan and/or Medium Impact
+	- [ ] Misconfigured DNS
+		- [ ] High impact Subdomain Takeover
+		- [ ] Basic Subdomain Takeover
+		- [ ] Zone Transfer
+	- [ ] Oauth Misconfiguration
+		- [ ] Account takeover
+		- [ ] Account Squatting
+	- [ ] Mail Server Misconfiguration
+		- [ ] No Spoofing Protection On email Domain
+		- [ ] Email Spoofing to Inbox due to Missing or Misconfigured DMARC on Email Domain
+	- [ ] Database Management System (DBMS) Misconfiguration
+		- [ ] Excessively Privileged User / DBA
+	- [ ] Lack of Password Confirmation
+		- [ ] Delete Account
+	- [ ] No Rate Limiting on Form
+		- [ ] Registration
+		- [ ] Login
+		- [ ] Email-Triggering
+		- [ ] SMS Triggering
+	- [ ] Missing Secure or HTTPOnly Cookie Flag
+		- [ ] Session Token
+	- [ ] clickjacking
+		- [ ] sensitive Clicke based action
+	- [ ] CAPTCHA
+		- [ ] Implementation Vulnerability
+	- [ ] Lack of Security Headers
+		- [ ] Cache-Control for a Sensitive Page
+	- [ ] Web Application Firewall (WAF) Bypass
+		- [ ] Direct Server Access
+- [ ] Server Side Injection
+	- [ ] Local File Inclusion (LFI)
+	- [ ] Remote code Execution (RCE)
+	- [ ] SQL Injection
+	- [ ] XML External Entity Injection (XXE)
+	- [ ] HTTP Response Manipulation
+		- [ ] Response Splitting (CRLF)
+	- [ ] Server-Side Template Injection (SSTI)
+		- [ ] Basic
+	- [ ] Content Spoofing
+		- [ ] Impersonation via Broken Link Hijacking
+		- [ ] External Authentication Injection
+		- [ ] Email HTML Injection
+		- [ ] iframe injection
+- [ ] Broken Authentication and Broken Session Management
+	- [ ] Authentication Bypass
+	- [ ] Second Factor Authentication (2FA) Bypass
+	- [ ] session Fixation
+		- [ ] Remote attack vector
+	- [ ] Cleartext Transmission of Session Token
+	- [ ] Weak login Fuction
+		- [ ] Other Plaintext protocal with no secure alternative
+		- [ ] over http
+	- [ ] Failure to invalidate Session
+		- [ ] On logut (client and serverside)
+		- [ ] On Password Reset and/or Change
+	- [ ] Weak Registration Implementation
+		- [ ] over http
+	- [ ] 
+- [ ] Sensitive data Exposure
+	- [ ] Disclosure of Secrets
+		- [ ] For Publicly Accessible Asset
+		- [ ] For Internal Asset
+		- [ ] pay-per-use Abuse
+	- [ ] Weak Password Reset Implementation
+		- [ ] Token Leakage via Host Header Poisoning
+		- [ ] Password Reset Token Sent Over HTTP
+	- [ ] EXIF Geolocation Data Not Stripped From Uploaded Images
+		- [ ] Automatic User Enumeration
+		- [ ] manual User Enumeration
+	- [ ] Visible Detailed Error/Debug Page
+		- [ ] Detailed Server Configuration 
+	- [ ] Token Leakage via referee 
+		- [ ] Untrusted 3rd party
+		- [ ] over http
+	- [ ] Sensitive Token in URL
+		- [ ] user facing
+	- [ ] Via localStorage/sessionStorage
+		- [ ] Sensitive Token
+- [ ] Broken Access Control (BAC)
+	- [ ] Insecure Direct Object References (IDOR)
+		- [ ] Edit/Delete Sensitive Information/iterable Object Identifier
+		- [ ] Read Sensitive Information/Iterable Object Identifiers
+		- [ ] Read/Edit/Delete Sensitive Information/Complex Object Identifiers(GUID)
+		- [ ] Username/Email Enumeration
+			- [ ] Non-Brute Force
+- [ ] Insecure OS/Firmware
+	- [ ] Command Injection
+	- [ ] Hardcoded Password
+		- [ ] Privileged User
+		- [ ] non-Privileged User
+- [ ] AI Application Security
+	- [ ] Large Language Model (LLM) Security
+		- [ ] Prompt Injection
+		- [ ] LLM Output Handling
+		- [ ] Training Data Poisoning
+		- [ ] Excessive Agency/Permission Manipulation
+- [ ] Cross-site Scripting
+	- [ ] Stored
+		- [ ] Privileged User to Privilege Elevation
+		- [ ] CSRF/URL based
+		- [ ] Privileged User to No Privilege Elevation
+	- [ ] Reflected 
+		- [ ] non self
+	- [ ] Referer
+	- [ ] Universal (UXSS)
+- [ ] Cross-site request forgery
+	- [ ] Application wide
+- [ ] Application level Denial of service (DOS)
+	- [ ] Critical Impact and/or Easy Difficulty
+- [ ] Cryptographic Weakness
+	- [ ] Key Reuse
+		- [ ] Inter Environment
+		- [ ] Lack of Perfect Forward Secrecy
+	- [ ] Insecure Key generation
+		- [ ] Insufficient key Space
+		- [ ] Key Exchage Without Entity Authentication
+	- [ ] Broken Cryptography 
+		- [ ] use of broken cryptographic primitive
+		- [ ] Use of Vulnerable Cryptographic Library
+	- [ ] Insufficient Entropy
+		- [ ] Predictable Pseudo Random number Generator (PRNG) seed
+		- [ ] small Seed space in Pseudo-Random Number Generation (PRNG)
+		- [ ] Predictable initialization vector (IV)
+	- [ ] Insufficient Verification of Data Authenticity
+		- [ ] Integrity Check Value (ICV)
+	- [ ] Side-Channel Attack
+		- [ ] Padding Oracle Attack
+		- [ ] Timing Attack
+	- [ ] Use of Expired Cryptographic Key (or Certificate)
+- [ ] Client Side Injection
+	- [ ] Binary Planting
+		- [ ] Default Folder Privilage escaltion
+- [ ] Unvalidated Redirect and Forwards
+	- [ ] Open redirect
+		- [ ] GET bases
+- [ ] Insufficient Security Configurability
+	- [ ] No Password Policy
+	- [ ] Weak Password Reset Implimentation
+		- [ ] token is not invalidated after use
+	- [ ] Weak 2FA Implimentation 
+		- [ ] 2FA Secret Cannot be Rotated
+		- [ ] 2FA Secret Remains Obtainable after 2FA is enabled
+- [ ] Insecure Data Storage
+	- [ ] Sensitive Application data Stored Unencrypted
+		- [ ] on external storage
+	- [ ] Server-Side Credentials Storage
+		- [ ] plaintext
+	- [ ] Excutable Download
+		- [ ] No Secure intergrity Check
+
+- [ ] Privacy Concern
+	- [ ] Unnecessary Data Collection
+		- [ ] WiFi SSID+Password
